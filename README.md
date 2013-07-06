@@ -28,7 +28,7 @@ Here is a list of basic uses:
 
 ## Requirements
 
-Make sure you include the Google Maps API with the Places Library before loading this plugin as described [here](http://code.google.com/intl/de-DE/apis/maps/documentation/javascript/places.html#loading_the_library).
+Make sure you include the Google Maps API with the Places Library before loading this plugin as described [here](https://developers.google.com/maps/documentation/javascript/places#loading_the_library).
 
 ````html
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
@@ -94,7 +94,7 @@ Advanced Example:
   Longitude:    <span data-geo="lng" />
   Address:      <span data-geo="formatted_address" />
   Country Code: <span data-geo="country_short" />
-</form>
+</div>
 ```
 
 ```javascript
@@ -138,6 +138,7 @@ $("#my_input").geocomplete({
 * `maxZoom` - The maximum zoom level to zoom in after a geocoding response. Default: `16`
 * `componentRestrictions` - Option for Google Places Autocomplete to restrict results by country. See the [docs](https://developers.google.com/maps/documentation/javascript/places#places_autocomplete)
 * `types` - An array containing one or more of the supported types for the places request. Default: `['geocode']` See the full list [here](http://code.google.com/apis/maps/documentation/javascript/places.html#place_search_requests).
+* `blur` - Defaults to `false`. When enabled it will trigger the geocoding request whenever the geofield is blured. (See jQuery `.blur()`)
 
 ## Events
 
